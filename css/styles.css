@@ -1,3 +1,140 @@
-nav{
-    border: 1px solid;
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    border-bottom: 1px groove;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo-icon {
+}
+
+.logo-icon a img{
+    max-height: 50px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: fit-content;
+    margin-right: 25px;
+    text-wrap: nowrap;
+}
+
+.nav-container a {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #000;
+}
+
+.nav-container a:last-child{
+    border-right: none;
+}
+
+.head-banner{
+    padding: 50px;
+    text-align: center;
+}
+
+.head-banner header h1{
+    font-size: xxx-large;
+    color: #000000;
+}
+
+.head-banner p{
+    font-size: 20px;
+    color: #666666;
+    padding: 25px 0;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.main-content-item{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.main-content-banner{
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+}
+
+.main-content-banner img{
+   border-radius: 10px;
+}
+
+.main-content-banner h6{
+    font-size: 24px;
+    padding: 0px 100px;
+    color: gray;
+    text-align: justify;
+    margin: 25px 5px 10px 5px;
+    line-height: 45px;
+    font-style: italic;
+}
+
+.main-content-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -180px;
+    margin-top: 0px;
+}
+
+.item-icon{
+    background-image: url(https://picsum.photos/200/300);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 25px;
+    flex: 1;
+}
+
+.item-info{
+    flex: 3;
+    text-wrap: nowrap;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+
+.item-info h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-info p{
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-content-form{
+    background-color: #00000017;
+    padding: 40px;
+    text-wrap: wrap;
+    flex: 1;
 }
