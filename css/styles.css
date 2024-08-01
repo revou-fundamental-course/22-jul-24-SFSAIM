@@ -14,6 +14,8 @@ body {
     background-color: #EFEFEF;
 }
 
+
+/* ini bagian header dan navigasi  */
 nav {
     background-color: #264653;
     border-bottom: 1px groove;
@@ -61,6 +63,7 @@ nav {
     color: #e76f51;
 }
 
+/* ini bagian title dan slogan */
 .main-title {
     padding: 50px;
     text-align: center;
@@ -84,12 +87,15 @@ nav {
     font-weight: bold;
 }
 
+
+/* ini bagian banner foto dan form*/
 .main-content {
     display: flex;
     justify-content: space-around;
     padding: 50px;
     padding-top: 0;
-
+    width: 100%;
+    margin-top: 10px;
 }
 
 .main-content-item {
@@ -99,24 +105,20 @@ nav {
     align-items: center;
     padding: 10px;
     padding-top: 0px;
+    width: 100%;
 }
 
-.main-content-item i{
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-}
-
+/* ini container banner foto carrousel */
 .main-banner-container{
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 
 .main-content-banner{
     border-radius: 10px; 
     width: 100%;
-    height: 500px;
-    background-size: auto;
+    height: 100%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -129,8 +131,24 @@ nav {
 .banner-3{
     background-image: url('https://img.freepik.com/free-photo/merlion-statue-cityscape-singapore_335224-666.jpg?t=st=1722503524~exp=1722507124~hmac=65e1e53a8efd895efdd707633ef1f877e3b3116e46aacb427bba29e2ec6b8207&w=996');
 }
+.banner-4{
+    background-image: url('https://thumb.viva.id/vivabandung/665x374/2022/10/24/6356a7551c9d4-gedung-sate-bandung_bandung.jpg');
+}
+.banner-5{
+
+}
+.banner-6{
+
+}
 
 
+.main-content-item i{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* ini item review pelanggan */
 .main-content-icon {
     display: flex;
     flex-direction: row;
@@ -176,6 +194,8 @@ nav {
     margin-top: 5px;
 }
 
+
+/* ini konten form pengunjung */
 .main-content-form {
     background-color: #e9c46a;
     padding: 40px;
@@ -185,4 +205,59 @@ nav {
 }
 .main-content-form b{
     font-size: larger;
+}
+
+.feature-container{
+    padding: 0 20px;
+}
+
+.feature-container h1{
+    font-family: "Acme";
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.feature-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+.feature-card{
+    width: 325px;
+    background-color: #e9c46a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 9px 7px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+.feature-card img{
+    width: 150px;
+}
+.feature-card h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.feature-card ul {
+    padding-bottom: 10px;
+    padding-left: 0; 
+}
+.feature-card ul li {
+    text-align: justify;
+    list-style-type: none;
+    padding: 10px 0;
+}
+.feature-card ul li b{
+    font-size: 18px;
+    background-color: #264653;
+    color: #e9c46a;
+
 }

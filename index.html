@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MADAMU Travel</title>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css\styles.css">
 
@@ -15,12 +16,14 @@
 
 
     <!-- ICON -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
+
 <body>
     <nav>
-        <header >
+        <header>
             <div class="logo-icon">
                 <a href="#">
                     <span>MADAMU</span>
@@ -43,19 +46,38 @@
             </header>
             <p>Your <span>happiness</span> is our <span>happiness</span></p>
         </article>
+
         
         <section class="main-content">
             <article class="main-content-item">
+                <!-- banner carousel -->
                 <div class="main-banner-container">
-                    <div class="main-content-banner banner-1">
-                    </div>
-                    <div class="main-content-banner banner-2">
-                    </div>
+                    <div class="main-content-banner banner-1"></div>
+                    <div class="main-content-banner banner-2"></div>
                     <div class="main-content-banner banner-3"></div>
+                    <div class="main-content-banner banner-4"></div>
+                    <div class="main-content-banner banner-5"></div>
+                    <div class="main-content-banner banner-6"></div>
                 </div>
 
+                <!-- button prev and next  -->
+                <div class="buttons">
+                    <button id="prev">P</button>
+                    <button id="next">N</button>
+                </div>
+
+                <!-- dots  -->
+                <ul class="dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
                 <i>"Liburan jadi menyenangkan bersama Travel Agentku"</i>
-                
+
                 <div class="main-content-icon">
                     <div class="item-icon"><img src="assets/user.png" alt=""></div>
                     <div class="item-info">
@@ -63,47 +85,57 @@
                         <i>Ibu Rumah Tangga, 28</i>
                     </div>
                 </div>
-                
+
             </article>
-            <form class="main-content-form" action="" >
+            <form class="main-content-form" action="">
                 <b>Contact Us</b>
                 <P>Sales akan menghubungi anda 1x24 jam setelah data kami terima</P>
 
                 <input type="text" id="input-name" placeholder="Full and last name" />
 
                 <button type="button" onclick="nextSlide(1);">Submit</button>
-                
+
             </form>
         </section>
 
-        <section class="feature-container">
-            <article >
-                <h1>3 things why you have to choose us as your travel agent's</h1>
+        <article class="feature-container">
+            <h1>3 things why you have to choose us as your travel agent's</h1>
+            <div class="feature-card-container">
                 <div class="feature-card card-1">
+                    <img src="assets/1.png" alt="">
                     <h3>Exciting and Customizable Travel Packages</h3>
                     <ul>
-                        <li><b>Cool Travel Packages</b>: We offer packages for families, romantic honeymoons, and thrilling adventures.</li>
-                        <li><b>Create Your Own Travel Plan</b>: You can customize your trip, choose destinations and activities, with the help of our travel experts.</li>
+                        <li><b>Cool Travel Packages</b><br> We offer packages for families, romantic honeymoons, and
+                            thrilling
+                            adventures.</li>
+                        <li><b>Create Your Own Travel Plan</b><br> You can customize your trip, choose destinations and
+                            activities, with the help of our travel experts.</li>
                     </ul>
                 </div>
                 <div class="feature-card card-2">
+                    <img src="assets/2.png" alt="">
                     <h3>Advanced Technology and Convenient Services</h3>
                     <ul>
-                        <li><b>Mobile App and 24/7 Chatbot</b>: Booking and accessing travel information is super easy, anytime, anywhere.</li>
-                        <li><b>Pickup Service and Fun Guides</b>: Enjoy comfortable transportation and fun guides to accompany you throughout your trip.</li>
+                        <li><b>Mobile App and 24/7 Chatbot</b><br> Booking and accessing travel information is super easy,
+                            anytime, anywhere.</li>
+                        <li><b>Pickup Service and Fun Guides</b><br> Enjoy comfortable transportation and fun guides to
+                            accompany you throughout your trip.</li>
                     </ul>
                 </div>
                 <div class="feature-card card-3">
+                    <img src="assets/3.png" alt="">
                     <h3>Awesome Rewards and Discounts</h3>
                     <ul>
-                        <li><b>Reward Points</b>: Earn points with every booking that can be redeemed for discounts or cool prizes.</li>
-                        <li><b>Special Discounts and Offers</b>: Get group booking discounts, special offers for loyal customers, and installment payment options to make it easier on your wallet.</li>
+                        <li><b>Reward Points</b><br> Earn points with every booking that can be redeemed for discounts or
+                            cool
+                            prizes.</li>
+                        <li><b>Special Discounts and Offers</b><br> Get group booking discounts, special offers for loyal
+                            customers, and installment payment options to make it easier on your wallet.</li>
                     </ul>
                 </div>
-                
+            </div>
 
-            </article>
-        </section>
+        </article>
 
 
     </main>
@@ -112,4 +144,5 @@
 
     </script>
 </body>
+
 </html>

@@ -14,7 +14,7 @@ function formValidation(){
     }
 }
 
-let indexSlide = 2; // [0, 1, 2]
+let indexSlide = 5; // [0, 1, 2, 3, 4, 5]
 showSlide();
 
 nextSlide(1)
