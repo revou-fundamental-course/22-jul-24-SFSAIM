@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salsabil Travel</title>
+    <title>MADAMU Travel</title>
     
     <!-- CSS -->
     <link rel="stylesheet" href="css\styles.css">
@@ -13,59 +13,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
-    
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
     <nav>
         <header >
             <div class="logo-icon">
-                <a href="#" class="acme-regular">SALSABIL TRAVEL</a>
+                <a href="#">
+                    <span>MADAMU</span>
+                    <i>TRAVEL</i>
+                </a>
             </div>
         </header>
 
         <section class="nav-container">
-            <a href="">Home</a>
-            <a href="">Our Package</a>
-            <a href="">Call Us</a>
+            <a href="" id="nav-menu-1">Home</a>
+            <a href="" id="nav-menu-2">Our Package</a>
+            <a href="" id="nav-menu-3">Call Us</a>
         </section>
     </nav>
 
     <main>
-        <article class="head-banner">
+        <article class="main-title">
             <header>
-                <h1>Your Trusted Travel Agent's</h1>
+                <h1>Your <span>Trusted</span> Travel Agent's</h1>
             </header>
-            <p>Your happiness is our happiness</p>
+            <p>Your <span>happiness</span> is our <span>happiness</span></p>
         </article>
         
         <section class="main-content">
             <article class="main-content-item">
-                <div class="main-content-banner">
-                    <img src="https://picsum.photos/500/500" alt="">
-                    <h6>"Liburan jadi menyenangkan bersama Travel Agentku"</h6>
+                <div class="main-banner-container">
+                    <div class="main-content-banner banner-1">
+                    </div>
+                    <div class="main-content-banner banner-2">
+                    </div>
+                    <div class="main-content-banner banner-3"></div>
                 </div>
+
+                <i>"Liburan jadi menyenangkan bersama Travel Agentku"</i>
                 
                 <div class="main-content-icon">
-                    <div class="item-icon"></div>
+                    <div class="item-icon"><img src="assets/user.png" alt=""></div>
                     <div class="item-info">
                         <h1>Florence Hughes</h1>
-                        <p>Ibu Rumah Tangga, 28</p>
+                        <i>Ibu Rumah Tangga, 28</i>
                     </div>
                 </div>
                 
             </article>
             <form class="main-content-form" action="" >
-                <header>
-                    <h3>Contact Us</h3>
-                    <P>Sales akan menghubungi anda 1x24 jam setelah data kami terima</P>
-                </header>
+                <b>Contact Us</b>
+                <P>Sales akan menghubungi anda 1x24 jam setelah data kami terima</P>
 
                 <input type="text" id="input-name" placeholder="Full and last name" />
 
-                <button type="button" onclick="formValidation();">Submit</button>
+                <button type="button" onclick="nextSlide(1);">Submit</button>
                 
             </form>
         </section>
+
+        <section class="feature-container">
+            <article >
+                <h1>3 things why you have to choose us as your travel agent's</h1>
+                <div class="feature-card card-1">
+                    <h3>Exciting and Customizable Travel Packages</h3>
+                    <ul>
+                        <li><b>Cool Travel Packages</b>: We offer packages for families, romantic honeymoons, and thrilling adventures.</li>
+                        <li><b>Create Your Own Travel Plan</b>: You can customize your trip, choose destinations and activities, with the help of our travel experts.</li>
+                    </ul>
+                </div>
+                <div class="feature-card card-2">
+                    <h3>Advanced Technology and Convenient Services</h3>
+                    <ul>
+                        <li><b>Mobile App and 24/7 Chatbot</b>: Booking and accessing travel information is super easy, anytime, anywhere.</li>
+                        <li><b>Pickup Service and Fun Guides</b>: Enjoy comfortable transportation and fun guides to accompany you throughout your trip.</li>
+                    </ul>
+                </div>
+                <div class="feature-card card-3">
+                    <h3>Awesome Rewards and Discounts</h3>
+                    <ul>
+                        <li><b>Reward Points</b>: Earn points with every booking that can be redeemed for discounts or cool prizes.</li>
+                        <li><b>Special Discounts and Offers</b>: Get group booking discounts, special offers for loyal customers, and installment payment options to make it easier on your wallet.</li>
+                    </ul>
+                </div>
+                
+
+            </article>
+        </section>
+
+
     </main>
 
     <script src="js\script.js">

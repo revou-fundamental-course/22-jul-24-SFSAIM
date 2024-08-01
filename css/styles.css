@@ -2,78 +2,94 @@
 .acme-regular {
     font-family: "Acme", sans-serif;
     font-weight: 400;
-    font-style: italic;
     text-decoration: none;
-    color: white;
-    font-size: xx-large;
-    letter-spacing: 2px;
 }
+/* theme color */
+/* #264653 #2a9d8f #e9c46a #f4a261 #e76f51 */
 
 /* BODY */
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: system-ui;
+    background-color: #EFEFEF;
 }
 
 nav {
-    background-color: rgb(147, 228, 122);
+    background-color: #264653;
     border-bottom: 1px groove;
     display: flex;
     justify-content: space-between;
     height: fit-content;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
 }
-
-.logo-icon {}
-
+   
+.logo-icon a{
+    font-family: "Acme";
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.logo-icon a span{
+    color: #e9c46a;
+    font-size: xx-large;
+}
+.logo-icon a i{
+    color: white;
+    font-size: x-large;
+}
 
 .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
     overflow: hidden;
     max-width: fit-content;
     margin-right: 25px;
     text-wrap: nowrap;
     font-weight: bold;
 }
-
 .nav-container a {
     flex: 1;
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
-    color: #ffffff;
-    border-right: 1px solid #ffffff;
+    color: #fefae0;
+}
+.nav-container a:hover{
+    color: #e76f51;
 }
 
-.nav-container a:last-child {
-    border-right: none;
-}
-
-.head-banner {
+.main-title {
     padding: 50px;
     text-align: center;
 }
-
-.head-banner header h1 {
+.main-title header h1 {
     font-size: xxx-large;
     color: #000000;
 }
+.main-title header span {
+    color: #e76f51;
+}
 
-.head-banner p {
+.main-title p {
     font-size: 20px;
     color: #666666;
     padding: 25px 0;
+}
+
+.main-title p span{
+    color: #e76f51;
+    font-weight: bold;
 }
 
 .main-content {
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    padding-top: 0;
+
 }
 
 .main-content-item {
@@ -85,64 +101,88 @@ nav {
     padding-top: 0px;
 }
 
-.main-content-banner {
-    max-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 25px;
+.main-content-item i{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
 }
 
-.main-content-banner img {
-    border-radius: 10px;
+.main-banner-container{
+    height: 500px;
+    width: 100%;
 }
 
-.main-content-banner h6 {
-    font-size: 24px;
-    padding: 0px 100px;
-    color: gray;
-    text-align: justify;
-    margin: 25px 5px 10px 5px;
-    line-height: 45px;
-    font-style: italic;
+.main-content-banner{
+    border-radius: 10px; 
+    width: 100%;
+    height: 500px;
+    background-size: auto;
+    background-position: center;
 }
+
+.banner-1{
+    background-image: url('https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?t=st=1722478669~exp=1722482269~hmac=1032cf784dfcd9e9d6182b81acb54167e344f7aa2c30ed53306ddb23be6daf02&w=996');
+}
+.banner-2{
+    background-image: url('https://img.freepik.com/free-photo/mountainous-landscape-with-fog_1150-18329.jpg?t=st=1722503141~exp=1722506741~hmac=21be54e939ceba801e09d5230841867ebb3cda23d17f22b65c064cecadb0e31e&w=996');
+}
+.banner-3{
+    background-image: url('https://img.freepik.com/free-photo/merlion-statue-cityscape-singapore_335224-666.jpg?t=st=1722503524~exp=1722507124~hmac=65e1e53a8efd895efdd707633ef1f877e3b3116e46aacb427bba29e2ec6b8207&w=996');
+}
+
 
 .main-content-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: -180px;
     margin-top: 0px;
 }
 
 .item-icon {
-    background-image: url(https://picsum.photos/200/300);
-    width: 75px;
-    height: 75px;
+    background-color: #e9c46a;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin: 25px;
-    flex: 1;
+    margin: 10px 10px 0 10px;
+}
+.item-icon img{
+    width: 50px;
+    height: 50px;
+    
 }
 
 .item-info {
-    flex: 3;
+    margin-top: 10px;
     text-wrap: nowrap;
     line-height: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .item-info h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.item-info p {
+.item-info i {
     color: gray;
-    font-weight: bold;
     font-style: italic;
+    padding: 0;
+    margin-top: 5px;
 }
 
 .main-content-form {
-    background-color: #00000017;
+    background-color: #e9c46a;
     padding: 40px;
     text-wrap: wrap;
+    border-radius: 5px;
+
+}
+.main-content-form b{
+    font-size: larger;
 }
